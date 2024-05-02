@@ -110,5 +110,5 @@ class TestApp:
             
             response = client.get('/check_session')
             
-            assert(response.status_code == 204)
+            assert(response.status_code == 401)
             assert(not response.data)
